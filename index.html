@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Azan World – The Smart AI Image Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Azan World – The Smart AI Image Generator</h1>
+        <p>Get professional results with our AI-powered prompt enhancer.</p>
+    </header>
+
+    <main class="container">
+        <section class="controls">
+            <textarea id="promptInput" placeholder="Enter your prompt here..." rows="5"></textarea>
+            
+            <div class="options">
+                <div class="option-group">
+                    <label for="aspectRatio">Aspect Ratio:</label>
+                    <select id="aspectRatio">
+                        <option value="1:1">1:1 (Square)</option>
+                        <option value="16:9" selected>16:9 (Landscape)</option>
+                        <option value="9:16">9:16 (Portrait)</option>
+                        <option value="4:3">4:3 (Standard)</option>
+                    </select>
+                </div>
+            </div>
+
+            <button id="generateBtn">Generate Images</button>
+        </section>
+
+        <section id="imageResults" class="results">
+            </section>
+    </main>
+    
+    <div id="popup" class="popup-container">
+        <div class="popup-content">
+            <span class="close-btn">&times;</span>
+            <p>No need to thank Azan.</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
